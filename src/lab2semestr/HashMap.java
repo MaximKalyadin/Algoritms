@@ -1,7 +1,7 @@
 package lab2semestr;
 
 public class HashMap {
-	private final static int TABLE_SIZE = 128;
+	private final static int TABLE_SIZE = 10;
     LinkedHashEntry[] table;
 
    public HashMap() {
@@ -11,19 +11,19 @@ public class HashMap {
           }
     }
 
-    public int get(int key) {
+    public void get(int key) {
           int hash = (key % TABLE_SIZE);
           if (table[hash] == null) {
-                return -1;
+                System.out.println(-1);
           }
           else {
-                LinkedHashEntry entry = table[hash];
-                while (entry != null && entry.getKey() != key)
-                      entry = entry.getNext();
-                if (entry == null)
-                      return -1;
-                else
-                      return entry.getValue();
+        	  String n = "";
+        	  LinkedHashEntry entry = table[hash];
+        	  while (entry != null) {
+        		  n += entry.getValue() + "\n";
+        		  entry = entry.getNext();
+        	  }
+        	  System.out.println(n);
           }
     }
 
@@ -33,12 +33,11 @@ public class HashMap {
                 table[hash] = new LinkedHashEntry(key, value);
           else {
                 LinkedHashEntry entry = table[hash];
-                while (entry.getNext() != null && entry.getKey() != key)
-                      entry = entry.getNext();
-                if (entry.getKey() == key)
-                      entry.setValue(value);
-                else
-                      entry.setNext(new LinkedHashEntry(key, value));
+                while (entry.getNext() != null) {
+    				entry = entry.getNext();
+    			}
+                entry.setNext(new LinkedHashEntry(key, value));
+               
           }
     }
 

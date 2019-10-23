@@ -7,11 +7,11 @@ public class MainHash {
 		hashmap.put(4, 2);
 		hashmap.put(5, 3);
 		hashmap.put(6, 4);
-		hashmap.put(17, 5);
-		hashmap.put(8, 6);
-		hashmap.put(6, 7);
-		hashmap.put(3, 8);
+		hashmap.put(6, 5);
+		hashmap.put(5, 6);
+		hashmap.put(5, 7);
+		hashmap.put(5, 8);
 		
-		System.out.println(hashmap.get(1));
+		hashmap.get(3);
 	}
 }

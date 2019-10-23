@@ -14,11 +14,7 @@ public class LinkedHashEntry {
     public int getValue() {
           return value;
     }
-
-    public void setValue(int value) {
-          this.value = value;
-    }
-
+    
     public int getKey() {
           return key;
     }
