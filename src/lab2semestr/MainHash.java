@@ -2,16 +2,16 @@ package lab2semestr;
 
 public class MainHash {
 	public static void main(String[] args) {
-		HashMap hashmap = new HashMap();
-		hashmap.put(3, 1);
-		hashmap.put(4, 2);
-		hashmap.put(5, 3);
-		hashmap.put(6, 4);
-		hashmap.put(6, 5);
-		hashmap.put(5, 6);
-		hashmap.put(5, 7);
-		hashmap.put(5, 8);
+		HashM hashmap = new HashM();
+		hashmap.Put(3, 1);
+		hashmap.Put(4, 2);
+		hashmap.Put(5, 3);
+		hashmap.Put(6, 4);
+		hashmap.Put(16, 5);
+		hashmap.Put(25, 6);
+		hashmap.Put(15, 7);
+		hashmap.Put(35, 8);
 		
-		hashmap.get(3);
+		hashmap.Get(5);
 	}
 }

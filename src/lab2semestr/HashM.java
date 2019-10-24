@@ -1,17 +1,17 @@
 package lab2semestr;
 
-public class HashMap {
+public class HashM {
 	private final static int TABLE_SIZE = 10;
     LinkedHashEntry[] table;
 
-   public HashMap() {
+   public HashM() {
           table = new LinkedHashEntry[TABLE_SIZE];
           for (int i = 0; i < TABLE_SIZE; i++) {
                 table[i] = null;
           }
     }
 
-    public void get(int key) {
+    public void Get(int key) {
           int hash = (key % TABLE_SIZE);
           if (table[hash] == null) {
                 System.out.println(-1);
@@ -27,7 +27,7 @@ public class HashMap {
           }
     }
 
-    public void put(int key, int value) {
+    public void Put(int key, int value) {
           int hash = (key % TABLE_SIZE);
           if (table[hash] == null)
                 table[hash] = new LinkedHashEntry(key, value);
