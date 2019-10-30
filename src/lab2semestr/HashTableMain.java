@@ -13,7 +13,7 @@ public class HashTableMain {
 		hashTable.insert("basket");
 		 
 		hashTable.print();
-		Item item = hashTable.find("manm");
+		Item item = hashTable.find("man");
  
 		if(item != null)
 			System.out.println("Элемент найден!");

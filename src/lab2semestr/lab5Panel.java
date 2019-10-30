@@ -8,7 +8,7 @@ public class lab5Panel extends JPanel {
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
-		lab5Minskovskogo.Draw(g, 150, 150, 600, 150, 7);
+		lab5Minskovskogo.Draw(g, 150, 150, 600, 150, 1);
 	}
 
 }

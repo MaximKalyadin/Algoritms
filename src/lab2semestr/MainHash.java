@@ -12,6 +12,6 @@ public class MainHash {
 		hashmap.Put(15, 7);
 		hashmap.Put(35, 8);
 		
-		hashmap.Get(5);
+		hashmap.Get(6);
 	}
 }
